@@ -23,6 +23,7 @@ import unmissiableSeacson from '../J Data/unmissiableSeacson.json'
 import ColorsOfTheSeason from '../J Data/ColorsOfTheSeason.json'
 import TopInfluencersExclusive from '../J Data/TopInfluencersExclusive.json'
 import trendyOutfitByInfluencer from '../J Data/trendyOutfitByInfuencer.json'
+import Footer from "./Footer"
 const Sliders=[
     {'url':'https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/8/93156ec1-1d4e-417c-8e17-ba56143d4a481667927056281-PreBuzz-Desktop-Banner.jpg'},
     {'url':'https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/28/84b6a214-9eb3-49eb-9f9d-72cec56ec5d71659019908592-Indian-Wear_DK--1-.jpg'},
@@ -206,7 +207,7 @@ function HomePage(){
             </Grid>
 
 
-
+          <Footer/>
         </Box>
     )     
 }
