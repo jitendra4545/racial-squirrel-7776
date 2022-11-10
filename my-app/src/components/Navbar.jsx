@@ -8,7 +8,7 @@ function navbar(){
 //         <Box  height='80px' borderRadius='lg' boxShadow= 'rgba(0, 0, 0, 0.16) 0px 1px 4px'>
 //  <Box justifyContent='space-evenly'  bg='red.400' gap='20px' >
 
-<Flex minWidth='max-content'alignItems='center' height='80px' gap='2' border='2px solid black'>
+<Flex bg='white' borderBottom='2px solid gray' position='fixed' mt='-100px' width='100%'alignItems='center' height='80px' gap='2' >
     <Spacer/>
     <Spacer/>
     <Spacer/>
