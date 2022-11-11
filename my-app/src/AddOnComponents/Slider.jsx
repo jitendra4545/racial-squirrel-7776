@@ -20,9 +20,9 @@ function HeadingImageSlider({images}){
    
  
   }
-  
+  const x=images.length-1
  const handleReset=()=>{
-    if(count==9){
+    if(count==x){
         setcount(0)
         setInterval(() => {
             setcount((time) => time + 1);
@@ -41,7 +41,7 @@ handleReset()
         <Box>
       
         <Box mt='100px'>
-          <Image src={images[count].url}/>  
+          <Image width='100%' src={images[count].url}/>  
          
         </Box>
         {/* <Box>

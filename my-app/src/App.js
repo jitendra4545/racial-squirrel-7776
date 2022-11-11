@@ -14,10 +14,12 @@ import Navbar from "./components/Navbar"
 import Profile from './components/Profile';
 import Wishlist from './components/Wishlist';
 import Bag from './components/Bag';
+import Clock from './AddOnComponents/saleStarts'
 function App() {
   return (
    <Box>
  <Navbar/>
+ 
        <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/men" element={<MenPage/>}/>
@@ -30,6 +32,7 @@ function App() {
         <Route path="/wishlist" element={<Wishlist/>} />
         <Route path="/bag" element={<Bag/>} />
        </Routes>
+       
    </Box>
    
   );

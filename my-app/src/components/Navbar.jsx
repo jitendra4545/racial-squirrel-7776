@@ -19,7 +19,7 @@ function navbar(){
     <Spacer />
     
    
-    <Link to="/men" ><Button height='70px' colorScheme='red' variant='ghost'>MEN</Button></Link>
+    <Link to="/men" ><Button  height='70px' colorScheme='red' variant='ghost'>MEN</Button></Link>
     <Spacer />
     <Link to="/women" > <Button height='70px' colorScheme='pink' variant='ghost'>WOMEN</Button></Link>
     <Spacer />
