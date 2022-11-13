@@ -100,7 +100,7 @@ function ProductItems({men}){
   </Grid>
 
 
-  <Box border='1px solid ' mt='20px' ml='20px' h='1700px' width='85%' >
+  <Box  mt='20px' ml='20px' h='1700px' width='85%' >
    <Box>
   <Grid  templateColumns='repeat(5, 1fr)'  gap={6} >
   {
