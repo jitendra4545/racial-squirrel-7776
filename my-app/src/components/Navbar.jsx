@@ -3,12 +3,12 @@ import {Link} from "react-router-dom"
 import {Box,Button,Img,IconButton,Flex, Spacer,Input,InputGroup,InputLeftElement,Tabs, TabList, TabPanels, Tab, TabPanel} from "@chakra-ui/react"
 import {SearchIcon} from "@chakra-ui/icons"
 
-function navbar(){
+function Navbar(){
      return (
 //         <Box  height='80px' borderRadius='lg' boxShadow= 'rgba(0, 0, 0, 0.16) 0px 1px 4px'>
 //  <Box justifyContent='space-evenly'  bg='red.400' gap='20px' >
 
-<Flex bg='white' borderBottom='2px solid gray' position='fixed' mt='-100px' width='100%'alignItems='center' height='80px' gap='2' >
+<Flex bg='white' borderBottom='2px solid skyblue' position='fixed' mt='-100px' width='100%'alignItems='center' height='80px' gap='2' >
     <Spacer/>
     <Spacer/>
     <Spacer/>
@@ -45,7 +45,7 @@ function navbar(){
     <Spacer />
     <Link to="/wishlist"  >Wishlist</Link>
     <Spacer />
-    <Link to="/bag"  >Bag</Link>
+    <Link to="/cartpage"  >Bag</Link>
     <Spacer/>
     <Spacer/>
     </Flex>
@@ -55,4 +55,4 @@ function navbar(){
      )
 }        
 
-export default navbar 
+export default Navbar 

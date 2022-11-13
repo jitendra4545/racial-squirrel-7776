@@ -1,5 +1,5 @@
 
-import {Text,Box,Image, Grid, Heading} from "@chakra-ui/react"
+import {Text,Box,Image, Grid, Heading, Button} from "@chakra-ui/react"
 import HeadingImageSlider from "../AddOnComponents/Slider"
 import dealsOfTheDay from '../J Data/dealsOfTheDay.json'
 import BestOfMyntra from '../J Data/BestOfMyntra.json'
@@ -43,7 +43,8 @@ const Sliders=[
 
 
 function HomePage(){
-    console.log('slide',BestOfMyntra)
+    
+  
     return (
         <Box >
            
@@ -51,43 +52,44 @@ function HomePage(){
            
             <HeadingImageSlider   images={Sliders}/>
             <Clock/>
+            <Image src='https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/12/28929758-2ec9-47a3-a318-3cdf24dee6721668236666794-DK-b1g3--1-.gif' />
             </Box>
-           
-            <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>DEAL OF THE DAY</Heading>
+           {/* https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/11/de3859bd-ed72-4d90-9a93-70dd191dd5a51668144694278-Brands-Everyone---s-Crushing-On-.jpg*/}
+            {/* <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>DEAL OF THE DAY</Heading> */}
+            <Image mt='30px' mb='30px' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/11/11c16415-1196-4bac-a667-ed7286a00e0f1668143055672-OMG-Deals--1-.jpg'/>
             <Grid  templateColumns='repeat(9, 1fr)'>
             {dealsOfTheDay.map((el)=>(
                 <Image src={el.image}/>
             ))}
             </Grid>
-            <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>BEST OF MYNTRA EXCLUSIVE BRANDS</Heading>
+            <Image mt='30px' mb='30px' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/11/db79460f-8020-49e8-8528-189507bce7a21668143245506-Budget-Buys--2-.jpg'/>
             <Grid  templateColumns='repeat(8, 1fr)' gap={2}>
             {BestOfMyntra.map((el)=>(
                 <Image src={el.image}/>
             ))}
             </Grid>
 
-            <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>TOP PICKS</Heading>
+            <Image mt='30px' mb='30px' src=' https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/11/de3859bd-ed72-4d90-9a93-70dd191dd5a51668144694278-Brands-Everyone---s-Crushing-On-.jpg'/>
             <Grid  templateColumns='repeat(7, 1fr)' gap={2}>
             {TopPicks.map((el)=>(
                 <Image src={el.image}/>
             ))}
             </Grid>
-            <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>CATEGORIES TO BAG</Heading>
+            <Image mt='30px' mb='30px' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/11/49039744-a61e-4220-a40a-e791ce77844f1668142162387-Shop-By-Category--1-.jpg'/>
             <Grid  templateColumns='repeat(8, 1fr)' gap={0}>
             {CategoryToBag.map((el)=>(
                 <Image src={el.image}/>
             ))}
             </Grid>
 
-            <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>DEALS ON TOP BRANDS</Heading>
+            <Image mt='30px' mb='30px' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/11/49039744-a61e-4220-a40a-e791ce77844f1668142162387-Shop-By-Category--1-.jpg'/>
             <Grid  templateColumns='repeat(8, 1fr)' gap={2}>
             {DealsOnTopBrands.map((el)=>(
                 <Image src={el.image}/>
             ))}
             </Grid>
 
-            <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>BRANDS AT SLASHED PRICES</Heading>
-
+            <Image mt='30px' mb='30px' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/11/49039744-a61e-4220-a40a-e791ce77844f1668142162387-Shop-By-Category--1-.jpg'/>
             <Grid  templateColumns='repeat(7, 1fr)' gap={0}>
             {BrandsAtSlacePrice.map((el)=>(
                 <Image src={el.image}/>
@@ -95,14 +97,14 @@ function HomePage(){
             </Grid>
 
 
-            <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>BEST BUYS</Heading>
+          <Image mt='30px' mb='30px' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/11/49039744-a61e-4220-a40a-e791ce77844f1668142162387-Shop-By-Category--1-.jpg'/>
             <Grid  templateColumns='repeat(8, 1fr)' gap={2}>
             {BestBuys.map((el)=>(
                 <Image src={el.image}/>
             ))}
             </Grid>
 
-            <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>MYNTRA LUXE</Heading>
+            <Image mt='30px' mb='30px' src='https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/11/11/49039744-a61e-4220-a40a-e791ce77844f1668142162387-Shop-By-Category--1-.jpg'/>
             <Grid  templateColumns='repeat(8, 1fr)' gap={0}>
             {MyntraLux.map((el)=>(
                 <Image src={el.image}/>
