@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import ProductItems from './ProductItems'
 import Navbar from '../components/Navbar'
 import Men from '../J Data/Men.json'
+import Footer from '../components/Footer'
 
 function MensProduct(){
 
@@ -25,7 +26,7 @@ console.log(AllClotingData)
      <ProductItems   
     men={Men}
      />
-   
+     
         </Box>
     )
 

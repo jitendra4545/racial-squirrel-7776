@@ -45,7 +45,7 @@ function Navbar(){
     <Spacer />
     <Link to="/wishlist"  >Wishlist</Link>
     <Spacer />
-    <Link to="/bag"  >Bag</Link>
+    <Link to="/cartpage"  >Bag</Link>
     <Spacer/>
     <Spacer/>
     </Flex>

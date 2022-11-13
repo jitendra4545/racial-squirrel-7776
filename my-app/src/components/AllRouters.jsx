@@ -7,9 +7,9 @@ import KidsPage from './kidsPage'
 import HomeLivingPage from './Home&LivingPage'
 import BeautyPage from './BeautyPage'
 import StudioPage from './StudioPage'
-import Profile from './Profile'
+import Profile from '../components/ProfilePage'
 import Wishlist from './Wishlist'
-import Bag from './Bag'
+
 import MensProduct from '../productCategories/mensProduct'
 import CartAdd from '../productCategories/CartPage'
 
@@ -25,11 +25,11 @@ return (
         <Route path="/home&living" element={<HomeLivingPage/>}/>
         <Route path="/beauty" element={<BeautyPage/>}/>
         <Route path="/studio" element={<StudioPage/>}/>
-        <Route path="/profile" element={<Profile />} />
+        <Route path='/profile' element={<Profile />} />
         <Route path="/wishlist" element={<Wishlist/>} />
-        <Route path="/bag" element={<Bag/>} />
+      
         <Route path='/mensproduct' element={<MensProduct/>} />
-        <Route path='/mensproduct/:title' element={<CartAdd />} />
+        <Route path='/cartpage' element={<CartAdd />} />
  </Routes>
  
 )

@@ -20,8 +20,9 @@ const handleClick=()=>{
       <Box onClick={handleClick}><Image  src={el.image}/></Box>  
     ))}
     </Grid>
-
-
+     
+     
+     
     <Heading letterSpacing={5} color='blackAlpha.700' mt='50px' mb='50px' ml='50px' as='h2' size='lg'>CATEGORIES TO BAG</Heading>
     <Grid  templateColumns='repeat(6, 1fr)' gap={10} ml='50px' mr='50px'>
     {b.map((el)=>(

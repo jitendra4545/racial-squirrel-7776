@@ -1,12 +1,17 @@
 import {Box,Flex,Center,Square,Text,Grid, Heading,Input, Spacer, Button} from '@chakra-ui/react'
 import Product from './Products'
+import {useState} from 'react'
+
+import Footer from '../components/Footer'
 
 function ProductItems({men}){
-    console.log(men)
+  
+
     return(
         <Box >
             <Box  >
-                <Heading>hi</Heading>
+               
+                <Heading  >All Products</Heading>
              <Grid gridTemplateColumns='repeat(3,1fr)'>
              <Box>
                 <Heading as='h5' size='sm' >FILTERS</Heading>
@@ -41,7 +46,7 @@ function ProductItems({men}){
             <hr/>
         <Flex >
             
-            <Grid  w='20%'  >
+            <Grid h='700px'  w='15%'  >
             <Heading as='h5'mt='20px' size='sm' >CATEGORIES</Heading>
             
            <Box ml='20px'>
@@ -95,29 +100,24 @@ function ProductItems({men}){
   </Grid>
 
 
-  <Box border='1px solid ' width='80%' >
-<Box>
+  <Box border='1px solid ' mt='20px' ml='20px' h='1700px' width='85%' >
+   <Box>
+  <Grid  templateColumns='repeat(5, 1fr)'  gap={6} >
   {
     men.map((el)=>(
          <Product 
-          image={el.images[0]}
-          discount={el.discount}
-          discountprice={el.discountprice}
-          strike_price={el.strike_price}
-          subtitle={el.subtitle}
-          title={el.title}
-         
-         
+         el={el}
+        
          />
     ))
   }
+ </Grid>
  </Box>
-
-
 
 
   </Box> 
   </Flex>
+  <Footer />
 </Box>
     )
 }
